@@ -22,7 +22,7 @@
             </tr>
         </thead>
         <tbody>
-            <p:forEach var="person" items="${personList}">
+            <c:forEach var="person" items="${personList}">
                 <tr>
                     <td>${person.PersonId}</td>
                     <td>${person.Type}</td>

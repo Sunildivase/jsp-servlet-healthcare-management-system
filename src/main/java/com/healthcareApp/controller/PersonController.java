@@ -26,12 +26,12 @@ public class PersonController extends HttpServlet {
 
             System.out.println("---------set the attribute-------");
             System.out.println("--------redirecting servlet request to dispatcher-----");
-            request.setAttribute("personList",personList);
+            request.setAttribute("personList", personList);
 
             // forward method
             request.getRequestDispatcher("DisplayPerson.jsp").forward(request,response);
 
-            // redirect method
+//             redirect method
 //            request.getSession().setAttribute("personList",personList);
 //            response.sendRedirect("DisplayPerson.jsp");
 

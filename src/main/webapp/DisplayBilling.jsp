@@ -18,7 +18,7 @@
             </tr>
         </thead>
         <tbody>
-            <p:forEach var="billing" items="${billingList}">
+            <c:forEach var="billing" items="${billingList}">
                 <tr>
                     <td>${billing.BillId}</td>
                     <td>${billing.Bill}</td>
