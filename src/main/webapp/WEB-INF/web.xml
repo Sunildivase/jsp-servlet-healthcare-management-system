@@ -1,7 +1,82 @@
-<!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
+
   <display-name>Archetype Created Web Application</display-name>
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+    <servlet-name>personController</servlet-name>
+    <servlet-class>com.healthcareApp.controller.PersonController</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>doctorController</servlet-name>
+    <servlet-class>com.healthcareApp.controller.DoctorController</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>hospitalController</servlet-name>
+    <servlet-class>com.healthcareApp.controller.HospitalController</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>departmentController</servlet-name>
+    <servlet-class>com.healthcareApp.controller.DepartmentController</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>appointmentController</servlet-name>
+    <servlet-class>com.healthcareApp.controller.AppointmentController</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>prescriptionController</servlet-name>
+    <servlet-class>com.healthcareApp.controller.PrescriptionController</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>billingController</servlet-name>
+    <servlet-class>com.healthcareApp.controller.BillingController</servlet-class>
+
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>personController</servlet-name>
+    <url-pattern>/person-controller</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet-mapping>
+    <servlet-name>doctorController</servlet-name>
+    <url-pattern>/doctor-controller</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>hospitalController</servlet-name>
+    <url-pattern>/hospital-controller</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>departmentController</servlet-name>
+    <url-pattern>/department-controller</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>appointmentController</servlet-name>
+    <url-pattern>/appointment-controller</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>prescriptionController</servlet-name>
+    <url-pattern>/prescription-controller</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>billingController</servlet-name>
+    <url-pattern>/billing-controller</url-pattern>
+  </servlet-mapping>
+
 </web-app>
