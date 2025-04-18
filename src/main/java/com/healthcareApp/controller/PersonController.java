@@ -75,10 +75,8 @@ public class PersonController extends HttpServlet {
 
         if (request.getMethod().equals("POST")) {
             this.doPost(request, response);
-
         } else if (request.getMethod().equals("DELETE")) {
             this.destroy(request,response);
-
         } else {
             this.doGet(request, response);
         }
