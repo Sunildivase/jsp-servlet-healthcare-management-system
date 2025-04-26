@@ -29,7 +29,7 @@ public class PersonController extends HttpServlet {
             request.setAttribute("personList", personList);
 
             // forward method
-            request.getRequestDispatcher("DisplayPerson.jsp").forward(request,response);
+            request.getRequestDispatcher("/DisplayPerson.jsp").forward(request,response);
 
 //             redirect method
 //            request.getSession().setAttribute("personList",personList);
